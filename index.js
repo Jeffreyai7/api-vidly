@@ -3,6 +3,7 @@ import { genresRouter} from "./routes/genres.js";
 import { customersRouter } from "./routes/customers.js";
 import { moviesRouter } from "./routes/movies.js";
 import { rentalsRouter } from "./routes/rentals.js";
+import { usersRouter } from "./routes/users.js";
 
 import mongoose from "mongoose";
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.static("public"))
   app.use("/api/customers", customersRouter);
   app.use("/api/movies", moviesRouter);
   app.use("/api/rentals", rentalsRouter);
+  app.use("/api/users", usersRouter);
   
 
 //configuration

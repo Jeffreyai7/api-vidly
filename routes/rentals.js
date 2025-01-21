@@ -1,5 +1,7 @@
 import express from "express";
 import { Rental, rentalZodSchema } from "../models/rental.js";
+import { Customer } from "../models/customer.js";
+import { Movie } from "../models/movie.js";
 export const rentalsRouter =  express.Router();
 
 
