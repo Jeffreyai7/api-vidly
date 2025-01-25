@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import {z} from "zod";
+import jwt from "jsonwebtoken";
+import config from "config";
 
 export const userZodSchema = z.object({
     name: z.string().min(3, "Name Should be more than 3 characters"),
@@ -14,5 +16,9 @@ export const userSchema = new mongoose.Schema({
     
 })
 
+userSchema.methods.generateAuthToken = function(){
+    const token = jwt.sign({_id: this._id}, config.get("jwtPrivateKey"))    
+    return token;
+}
 
 export const User = mongoose.model("Users", userSchema)

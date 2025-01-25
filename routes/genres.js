@@ -1,8 +1,7 @@
 import express from "express";
 export const genresRouter = express.Router()
 import { genreZodSchema, Genre } from "../models/genre.js";
-
-
+import auth from "../middleware/auth.js";
 
 genresRouter.get("/", async(req, res) => {
     const genres = await Genre.find().sort("name");
@@ -11,7 +10,8 @@ genresRouter.get("/", async(req, res) => {
 })
 
 
-genresRouter.post("/", async(req, res) =>{
+genresRouter.post("/", auth,  async(req, res) =>{
+    const token = req.header("x-auth-token");
     const validation = genreZodSchema.safeParse(req.body)
     if(!validation.success)
         return res.status(400).json({errors: validation.error.errors})
@@ -27,7 +27,7 @@ genresRouter.post("/", async(req, res) =>{
 
 
 
-genresRouter.get("/:id", async(req, res) => {
+genresRouter.get("/:id", auth, async(req, res) => {
     
   const genre = await Genre.findById(req.params.id)
   if (!genre)
@@ -38,7 +38,7 @@ res.send(genre);
 
 
 
-genresRouter.put("/:id", async(req, res) =>{
+genresRouter.put("/:id", auth,  async(req, res) =>{
     const validation = genreZodSchema.safeParse(req.body)
     if(!validation.success)
         return res.status(400).json({errors: validation.error.errors})
@@ -53,7 +53,7 @@ genresRouter.put("/:id", async(req, res) =>{
 
 })
 
-genresRouter.delete("/:id", async(req, res) => {
+genresRouter.delete("/:id", auth, async(req, res) => {
     const genre = await Genre.findByIdAndDelete(req.params.id)
     if(!genre)
         return res.status(404).send("The genre with the given Id does not exist");  

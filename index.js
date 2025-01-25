@@ -4,12 +4,16 @@ import { customersRouter } from "./routes/customers.js";
 import { moviesRouter } from "./routes/movies.js";
 import { rentalsRouter } from "./routes/rentals.js";
 import { usersRouter } from "./routes/users.js";
-
+import { authRouter } from "./routes/auth.js";
 import mongoose from "mongoose";
+import config from "config";
 const app = express();
 
 
-
+if(!config.get("jwtPrivateKey")){
+    console.error("FATAL ERROR: jwtPrivateKey is not defined")
+    process.exit(1)
+}
 mongoose.connect('mongodb://localhost/vidlyapp')
     .then(() => console.log("Connected to MongoDB..."))
     .catch((err) => console.error("Could not connect to MongoDB", err))
@@ -25,6 +29,7 @@ app.use(express.static("public"))
   app.use("/api/movies", moviesRouter);
   app.use("/api/rentals", rentalsRouter);
   app.use("/api/users", usersRouter);
+  app.use("/api/auth", authRouter);
   
 
 //configuration
