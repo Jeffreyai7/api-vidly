@@ -5,6 +5,7 @@ import routesBase from  "./startup/routes.js";
 import connectDb from "./startup/db.js";
 import logging from "./startup/logging.js";
 import configure from "./startup/config.js";
+import winston from "winston";
 
 
 routesBase(app)
@@ -24,7 +25,7 @@ app.get("/", (req, res) => {
 const port = process.env.PORT || 5000
 
 app.listen(port, () => {
-        console.log(`listening on port ${port}`)
+        winston.info(`listening on port ${port}`)
     })
     
 

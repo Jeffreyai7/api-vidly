@@ -13,6 +13,13 @@ export default function logging() {
     
     winston.add(new winston.transports.File({filename: "logfile.log"}))
     
+    winston.add(new winston.transports.Console({
+        format: winston.format.combine(
+          winston.format.colorize(),
+          winston.format.simple()
+        ),
+      }));
+      
     winston.add(new winston.transports.MongoDB({
         db: "mongodb://localhost/vidlyapp",
         level: "info",
