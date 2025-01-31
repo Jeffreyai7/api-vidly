@@ -5,8 +5,11 @@ import "express-async-errors";
 
 export default function logging() {
 
-    winston.handleExceptions(new winston.transports.File({filename: "uncaughtExceptions.log"})) 
+    winston.handleExceptions(
+        new winston.transports.Console({colorize: true, prettyPrint: true}),
+        new winston.transports.File({filename: "uncaughtExceptions.log"})) 
     
+
     process.on('unhandledRejection', (ex) => {
         throw ex
     })
@@ -19,7 +22,7 @@ export default function logging() {
           winston.format.simple()
         ),
       }));
-      
+
     winston.add(new winston.transports.MongoDB({
         db: "mongodb://localhost/vidlyapp",
         level: "info",
