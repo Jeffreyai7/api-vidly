@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
-import {z} from "zod";
+import {boolean, z} from "zod";
 import jwt from "jsonwebtoken";
 import config from "config";
+// import admin from "../middleware/admin";
 
 export const userZodSchema = z.object({
     name: z.string().min(3, "Name Should be more than 3 characters"),
@@ -12,12 +13,12 @@ export const userZodSchema = z.object({
 export const userSchema = new mongoose.Schema({       
     name: { type: String, required: true, minlength: 5, maxlength: 50 },
     email: {type: String, required: true, minlength:5, maxlength: 255, unique:true},
-    password: {type: String, required: true, minlength:5, maxlength: 1024}
-    
+    password: {type: String, required: true, minlength:5, maxlength: 1024},
+    admin: {type: Boolean}
 })
 
 userSchema.methods.generateAuthToken = function(){
-    const token = jwt.sign({_id: this._id}, config.get("jwtPrivateKey"))    
+    const token = jwt.sign({_id: this._id, admin: this.admin}, config.get("jwtPrivateKey"))    
     return token;
 }
 

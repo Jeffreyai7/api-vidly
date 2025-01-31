@@ -1,3 +1,5 @@
+import "express-async-errors";
+import winston from "winston";
 import express, { json, urlencoded } from "express";
 import { genresRouter} from "./routes/genres.js";
 import { customersRouter } from "./routes/customers.js";
@@ -7,8 +9,22 @@ import { usersRouter } from "./routes/users.js";
 import { authRouter } from "./routes/auth.js";
 import mongoose from "mongoose";
 import config from "config";
+import error from "./middleware/error.js";
 const app = express();
 
+
+winston.handleExceptions(new winston.transports.File({filename: "uncaughtExceptions.log"})) 
+
+process.on('unhandledRejection', (ex) => {
+    throw ex
+})
+
+
+winston.add(new winston.transports.File({filename: "logfile.log"}))
+// winston.add(new winston.transports.MongoDB, {
+//     db: "mongodb://localhost/vidlyapp",
+//     level: "info"
+// })    
 
 if(!config.get("jwtPrivateKey")){
     console.error("FATAL ERROR: jwtPrivateKey is not defined")
@@ -30,6 +46,7 @@ app.use(express.static("public"))
   app.use("/api/rentals", rentalsRouter);
   app.use("/api/users", usersRouter);
   app.use("/api/auth", authRouter);
+  app.use(error);
   
 
 //configuration
