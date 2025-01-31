@@ -1,9 +1,11 @@
+import mongoose from 'mongoose';
 import winston from 'winston';
-import mongoose from "mongoose";
 
 
-export default function(app){
+export default function connectDb(){
     mongoose.connect('mongodb://localhost/vidlyapp')
     .then(() => winston.info("Connected to MongoDB..."))
 
 }
+
+

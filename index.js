@@ -1,10 +1,15 @@
 import "express-async-errors";
+import express from "express";
 import winston from "winston";
-import express, { json, urlencoded } from "express";
+import "winston-mongodb";
 import config from "config";
 const app = express();
-import "./startup/routes.js";
-import "./startup/db.js";
+import routesBase from  "./startup/routes.js";
+import connectDb from "./startup/db.js";
+// import logging from "./startup/logging.js";
+
+routesBase(app)
+connectDb()
 
 winston.handleExceptions(new winston.transports.File({filename: "uncaughtExceptions.log"})) 
 
@@ -18,19 +23,21 @@ winston.add(new winston.transports.File({filename: "logfile.log"}))
 //     level: "info"
 // })    
 
+
 if(!config.get("jwtPrivateKey")){
     console.error("FATAL ERROR: jwtPrivateKey is not defined")
     process.exit(1)
 }
 
-
 app.get("/", (req, res) => {
     res.send("Hello World")
     })
     
-    const port = process.env.PORT || 5000
+    
+    
+const port = process.env.PORT || 5000
 
-    app.listen(port, () => {
+app.listen(port, () => {
         console.log(`listening on port ${port}`)
     })
     
