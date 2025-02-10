@@ -7,7 +7,7 @@ describe("user.generateAuthToken", () => {
   it("should return a valid JWT", () => {
     const payload = {
       _id: new mongoose.Types.ObjectId().toHexString(),
-      isAdmin: true,
+      admin: true,
     };
     // const payload = { _id: 1, isAdmin: true };
 
@@ -15,7 +15,7 @@ describe("user.generateAuthToken", () => {
 
     const token = user.generateAuthToken();
 
-    const decoded = jwt.verify(token, config.get("jwtPrivatekey"));
+    const decoded = jwt.verify(token, config.get("jwtPrivateKey"));
     expect(decoded).toMatchObject(payload);
   });
 });
