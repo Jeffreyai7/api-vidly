@@ -3,8 +3,6 @@ import { User, userZodSchema } from "../models/user.js";
 export const usersRouter = express.Router();
 import _ from "lodash";
 import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import config from "config";
 import auth from "../middleware/auth.js";
 
 
@@ -29,7 +27,7 @@ usersRouter.post("/", async(req, res) =>{
     user.password = await bcrypt.hash(user.password, salt);
 
    user = await user.save();
-    const token = user.generateAuthToken();
+    const token = user.generateAuthToken()
     
     res.header("x-auth-token", token).send(_.pick(user, ["_id", "name", "email"]))
 })

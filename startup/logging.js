@@ -1,11 +1,11 @@
 import winston from "winston"
-import "winston-mongodb";
+// import "winston-mongodb";
 import "express-async-errors";
 
 
 export default function logging() {
 
-    winston.handleExceptions(
+    winston.exceptions.handle(
         new winston.transports.Console({colorize: true, prettyPrint: true}),
         new winston.transports.File({filename: "uncaughtExceptions.log"})) 
     
@@ -23,9 +23,9 @@ export default function logging() {
         ),
       }));
 
-    winston.add(new winston.transports.MongoDB({
-        db: "mongodb://localhost/vidlyapp",
-        level: "info",
-    }))    
+    // winston.add(new winston.transports.MongoDB({
+    //     db: "mongodb://localhost/vidlyapp",
+    //     level: "info",
+    // }))    
     
 }

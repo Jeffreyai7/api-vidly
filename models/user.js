@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {boolean, z} from "zod";
+import { z }  from "zod";
 import jwt from "jsonwebtoken";
 import config from "config";
 // import admin from "../middleware/admin";
