@@ -1,20 +1,21 @@
 import { User } from "../../../models/user.js";
-import config from 'config';
+import config from "config";
 import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 
-
-
 describe("user.generateAuthToken", () => {
-    it("should return a valid JWT", () => {
-        const payload = {_id: new mongoose.Types.ObjectId().toHexString(), isAdmin: true}
-        
-        const user =  new User(payload)
+  it("should return a valid JWT", () => {
+    const payload = {
+      _id: new mongoose.Types.ObjectId().toHexString(),
+      isAdmin: true,
+    };
+    // const payload = { _id: 1, isAdmin: true };
 
-        const token = user.generateAuthToken()
+    const user = new User(payload);
 
-        const decoded = jwt.verify(token, config.get("jwtPrivatekey"));
-        expect(decoded).toMatchObject(payload)
+    const token = user.generateAuthToken();
 
-    })
-})
+    const decoded = jwt.verify(token, config.get("jwtPrivatekey"));
+    expect(decoded).toMatchObject(payload);
+  });
+});
