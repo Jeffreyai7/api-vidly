@@ -150,5 +150,35 @@ describe("/api/genres", () => {
 
       expect(res.status).toBe(200);
     });
+
+    it("should save if valid", async () => {
+      const token = new User().generateAuthToken();
+      const genre = new Genre({ name: "genre2" });
+      await genre.save();
+
+      const _id = genre._id;
+      const res = await supertest(server)
+        .put(`/api/genres/${_id}`)
+        .set("x-auth-token", token)
+        .send({ name: "genre2" });
+
+      const retGenre = await Genre.find({ name: "genre1" });
+
+      expect(retGenre).not.toBeNull();
+    });
+
+    it("should return the genre if valid", async () => {
+      const token = new User().generateAuthToken();
+      const genre = new Genre({ name: "genre2" });
+      await genre.save();
+      const _id = genre._id;
+      const res = await supertest(server)
+        .put(`/api/genres/${_id}`)
+        .set("x-auth-token", token)
+        .send({ name: "genre2" });
+
+      // expect(res.body).toHaveProperty("_id");
+      expect(res.body).toHaveProperty("name", "genre2");
+    });
   });
 });
