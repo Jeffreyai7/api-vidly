@@ -2,9 +2,12 @@ import supertest from "supertest";
 import server from "../../index.js";
 import { Genre } from "../../models/genre.js";
 import { User } from "../../models/user.js";
+import mongoose from "mongoose";
 
 describe("/api/genres", () => {
-  beforeEach(() => server);
+  beforeEach(async () => {
+    await Genre.deleteMany({}); // Clears genres collection before each test
+  });
 
   afterEach(async () => {
     server.close();
@@ -13,10 +16,7 @@ describe("/api/genres", () => {
 
   describe("/GET", () => {
     it("should return all genres", async () => {
-      await Genre.collection.insertMany([
-        { name: "genre1" },
-        { name: "genre2" },
-      ]);
+      await Genre.insertMany([{ name: "genre1" }, { name: "genre2" }]);
       const res = await supertest(server).get("/api/genres");
 
       expect(res.status).toBe(200);
@@ -94,6 +94,61 @@ describe("/api/genres", () => {
 
       expect(res.body).toHaveProperty("_id");
       expect(res.body).toHaveProperty("name", "genre1");
+    });
+  });
+
+  describe("Put /:id", () => {
+    it("should return 401 if client is not logged in", async () => {
+      const res = await supertest(server)
+        .put("/api/genres/1")
+        .send({ name: "genre1" });
+      expect(res.status).toBe(401);
+    });
+
+    it("should return 400 if genre is less than 5 characters", async () => {
+      const token = new User().generateAuthToken();
+      const res = await supertest(server)
+        .put("/api/genres/1")
+        .set("x-auth-token", token)
+        .send({ name: "1234" });
+      expect(res.status).toBe(400);
+    });
+
+    it("should return 400 if genre is more than 5 characters", async () => {
+      const name = new Array(52).join("a");
+
+      const token = new User().generateAuthToken();
+      const res = await supertest(server)
+        .put("/api/genres/1")
+        .set("x-auth-token", token)
+        .send({ name });
+      expect(res.status).toBe(400);
+    });
+
+    it("should return 404 if invalid id is passed", async () => {
+      const token = new User().generateAuthToken();
+      const genre = new Genre({ name: "genre1" });
+      await genre.save();
+      const _id = new mongoose.Types.ObjectId().toHexString();
+      const res = await supertest(server)
+        .put(`/api/genres/${_id}`)
+        .set("x-auth-token", token)
+        .send({ name: "genre1" });
+
+      expect(res.status).toBe(404);
+    });
+
+    it("should return 200 if valid id is passed", async () => {
+      const token = new User().generateAuthToken();
+      const genre = new Genre({ name: "genre2" });
+      await genre.save();
+      const _id = genre._id;
+      const res = await supertest(server)
+        .put(`/api/genres/${_id}`)
+        .set("x-auth-token", token)
+        .send({ name: "genre2" });
+
+      expect(res.status).toBe(200);
     });
   });
 });

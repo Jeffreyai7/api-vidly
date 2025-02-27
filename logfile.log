@@ -152,3 +152,239 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
 {"level":"info","message":"listening on port 5000"}
 {"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"body":"{\r\n    \"name\": \"Jeffrey\"\r\n    \"email\": \"jirukeh@gmail.com\",\r\n    \"password\": \"Abalaba94\"\r\n}","expose":true,"level":"error","message":"Expected ',' or '}' after property value in JSON at position 30 Expected ',' or '}' after property value in JSON at position 30","stack":"SyntaxError: Expected ',' or '}' after property value in JSON at position 30\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\body-parser\\lib\\types\\json.js:92:19)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:519:28)\n    at endReadableNT (node:internal/streams/readable:1696:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)","status":400,"statusCode":400,"type":"entity.parse.failed"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}
+{"level":"error","message":"Operation `genres.insertOne()` buffering timed out after 10000ms Operation `genres.insertOne()` buffering timed out after 10000ms","stack":"MongooseError: Operation `genres.insertOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:185:23)\n    at listOnTimeout (node:internal/timers:581:17)\n    at processTimers (node:internal/timers:519:7)"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"1\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"1\"","value":"1","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"kind":"ObjectId","level":"error","message":"Cast to ObjectId failed for value \"167c0edd59a132e581d7bf02b\" (type string) at path \"_id\" for model \"Genres\" Cast to ObjectId failed for value \"167c0edd59a132e581d7bf02b\" (type string) at path \"_id\" for model \"Genres\"","path":"_id","reason":{},"stack":"CastError: Cast to ObjectId failed for value \"167c0edd59a132e581d7bf02b\" (type string) at path \"_id\" for model \"Genres\"\n    at SchemaObjectId.Object.<anonymous>.SchemaObjectId.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schema\\objectId.js:251:11)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.applySetters (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1255:12)\n    at SchemaObjectId.Object.<anonymous>.SchemaType.castForQuery (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\schemaType.js:1673:17)\n    at cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\cast.js:390:32)\n    at model.Query.Object.<anonymous>.Query.cast (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4897:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:2306:10)\n    at model.Query._findOneAndUpdate (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:3403:8)\n    at model.Query.exec (C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\node_modules\\mongoose\\lib\\query.js:4446:80)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at C:\\Users\\HP\\Desktop\\Project Folder\\nodejs\\apiclass\\routes\\genres.js:40:17","stringValue":"\"167c0edd59a132e581d7bf02b\"","value":"167c0edd59a132e581d7bf02b","valueType":"string"}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp_tests..."}
