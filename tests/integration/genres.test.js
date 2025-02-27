@@ -182,3 +182,12 @@ describe("/api/genres", () => {
     });
   });
 });
+
+describe("DELETE /:id", () => {
+  it("should return 401 if client is not logged in", async () => {
+    const res = await supertest(server)
+      .delete("/api/genres/1")
+      .send({ name: "genre1" });
+    expect(res.status).toBe(401);
+  });
+});
