@@ -185,9 +185,73 @@ describe("/api/genres", () => {
 
 describe("DELETE /:id", () => {
   it("should return 401 if client is not logged in", async () => {
-    const res = await supertest(server)
-      .delete("/api/genres/1")
-      .send({ name: "genre1" });
+    const res = await supertest(server).delete("/api/genres/1");
+
     expect(res.status).toBe(401);
+  });
+
+  it("should return 404 for not having a valid token but  with admin access ", async () => {
+    const payload = { admin: true };
+    const token = new User(payload).generateAuthToken();
+    // const user = new User({ admin: false });
+    // const token = user.generateAuthToken();
+    const genre = new Genre({ name: "genre1" });
+    await genre.save();
+    const _id = new mongoose.Types.ObjectId().toHexString();
+    const res = await supertest(server)
+      .delete(`/api/genres/${_id}`)
+      .set("x-auth-token", token);
+
+    expect(res.status).toBe(404);
+  });
+  it("should return 403 for having a valid token but  without admin access ", async () => {
+    const payload = { admin: false };
+    const token = new User(payload).generateAuthToken();
+    // const user = new User({ admin: false });
+    // const token = user.generateAuthToken();
+    const genre = new Genre({ name: "genre1" });
+    await genre.save();
+    const _id = new mongoose.Types.ObjectId().toHexString();
+    const res = await supertest(server)
+      .delete(`/api/genres/${_id}`)
+      .set("x-auth-token", token);
+
+    expect(res.status).toBe(403);
+  });
+
+  it("should return 404 if invalid id is passed", async () => {
+    const token = new User({ admin: true }).generateAuthToken();
+    const genre = new Genre({ name: "genre1" });
+    await genre.save();
+    const _id = new mongoose.Types.ObjectId().toHexString();
+    const res = await supertest(server)
+      .delete(`/api/genres/${_id}`)
+      .set("x-auth-token", token);
+
+    expect(res.status).toBe(404);
+  });
+
+  it("should return 200 if valid id is passed", async () => {
+    const token = new User({ admin: true }).generateAuthToken();
+    const genre = new Genre({ name: "genre1" });
+    await genre.save();
+    const _id = genre._id;
+    const res = await supertest(server)
+      .delete(`/api/genres/${_id}`)
+      .set("x-auth-token", token);
+
+    expect(res.status).toBe(200);
+  });
+
+  it("should return the genre if valid", async () => {
+    const token = new User({ admin: true }).generateAuthToken();
+    const genre = new Genre({ name: "genre1" });
+    await genre.save();
+    const _id = genre._id;
+    const res = await supertest(server)
+      .delete(`/api/genres/${_id}`)
+      .set("x-auth-token", token);
+
+    expect(res.body).toHaveProperty("name", genre.name);
   });
 });
