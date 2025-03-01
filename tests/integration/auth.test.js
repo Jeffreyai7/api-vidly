@@ -4,7 +4,7 @@ import { User } from "../../models/user.js";
 import { Genre } from "../../models/genre.js";
 
 describe("auth middleware", () => {
-  beforeEach(() => server);
+  // beforeEach(() => server);
 
   afterEach(async () => {
     await Genre.deleteMany({});
