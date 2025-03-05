@@ -14,7 +14,7 @@ describe("/api/returns", () => {
     return supertest(server)
       .post("/api/returns")
       .set("x-auth-token", token)
-      .send({ customerId });
+      .send({ customerId, movieId });
   };
 
   beforeEach(async () => {
@@ -56,7 +56,6 @@ describe("/api/returns", () => {
   it("should return 400 if custmerId is not provided", async () => {
     customerId = "";
     const res = await exec();
-
     expect(res.status).toBe(400);
   });
 
@@ -64,5 +63,12 @@ describe("/api/returns", () => {
     movieId = "";
     const res = await exec();
     expect(res.status).toBe(400);
+  });
+
+  it("should return 404 if no rental found for the customer/movie", async () => {
+    customerId = new mongoose.Types.ObjectId(); // New, unknown customerId
+    movieId = new mongoose.Types.ObjectId(); // New, unknown movieId
+    const res = await exec();
+    expect(res.status).toBe(404);
   });
 });
