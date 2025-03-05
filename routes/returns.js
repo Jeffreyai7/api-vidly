@@ -20,5 +20,10 @@ returnsRouter.post("/", async (req, res) => {
 
   if (!rental) return res.status(404).send("Rental not found");
 
-  // res.status(200).send(rental); // Return rental for now
+  if (rental.dateReturned)
+    return res.status(400).send("rental already processed");
+
+  rental.dateReturned = new Date();
+  await rental.save();
+  res.status(200).send(rental); // Return rental for now
 });

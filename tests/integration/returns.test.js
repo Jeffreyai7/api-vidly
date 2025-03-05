@@ -66,9 +66,30 @@ describe("/api/returns", () => {
   });
 
   it("should return 404 if no rental found for the customer/movie", async () => {
-    customerId = new mongoose.Types.ObjectId(); // New, unknown customerId
-    movieId = new mongoose.Types.ObjectId(); // New, unknown movieId
+    await Rental.deleteMany({});
     const res = await exec();
     expect(res.status).toBe(404);
+  });
+
+  it("should return 200 if rental already exists", async () => {
+    const res = await exec();
+    expect(res.status).toBe(200);
+  });
+
+  it("should return 400 if rental already processed exists", async () => {
+    rental.dateReturned = new Date();
+    await rental.save();
+
+    const res = await exec();
+
+    expect(res.status).toBe(400);
+  });
+
+  it("should set the returnDate if input is valid", async () => {
+    const res = await exec();
+
+    const rentalInDb = await Rental.findById(rental._id);
+    const diff = new Date() - rentalInDb.dateReturned;
+    expect(diff).toBeLessThan(10 * 1000);
   });
 });
