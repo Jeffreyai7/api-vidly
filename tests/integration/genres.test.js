@@ -10,7 +10,7 @@ describe("/api/genres", () => {
   });
 
   afterEach(async () => {
-    server.close();
+    await new Promise((resolve) => server.close(resolve));
     await Genre.deleteMany({});
   });
 

@@ -1,6 +1,8 @@
+import supertest from "supertest";
 import server from "../..";
 import { Rental } from "../../models/rental";
 import mongoose from "mongoose";
+import { User } from "../../models/user";
 
 describe("/api/returns", () => {
   let customerId;
@@ -25,12 +27,41 @@ describe("/api/returns", () => {
   });
 
   afterEach(async () => {
-    server.close();
+    await new Promise((resolve) => server.close(resolve));
     await Rental.deleteMany({});
   });
 
   it("should work", async () => {
     const result = await Rental.findById(rental._id);
     expect(result).not.toBeNull();
+  });
+
+  it("should return 401 if client is not logged in", async () => {
+    const res = await supertest(server)
+      .post("/api/returns")
+      .send({ customerId, movieId });
+    expect(res.status).toBe(401);
+  });
+
+  it("should return 400 if custmerId is not provided", async () => {
+    const token = new User().generateAuthToken();
+
+    const res = await supertest(server)
+      .post("/api/returns")
+      .set("x-auth-token", token)
+      .send({ movieId });
+
+    expect(res.status).toBe(400);
+  });
+
+  it("should return 400 if movieId is not provided", async () => {
+    const token = new User().generateAuthToken();
+
+    const res = await supertest(server)
+      .post("/api/returns")
+      .set("x-auth-token", token)
+      .send({ customerId });
+
+    expect(res.status).toBe(400);
   });
 });
