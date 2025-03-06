@@ -1,6 +1,7 @@
 import express from "express";
+import moment from "moment";
 import { Rental } from "../models/rental";
-
+import { Movie } from "../models/movie";
 export const returnsRouter = express.Router();
 
 returnsRouter.post("/", async (req, res) => {
@@ -24,6 +25,18 @@ returnsRouter.post("/", async (req, res) => {
     return res.status(400).send("rental already processed");
 
   rental.dateReturned = new Date();
+
+  const rentalDays = moment().diff(rental.dateOut, "days");
+
+  rental.rentalFee = rentalDays * rental.movie.dailyRentalRate;
   await rental.save();
+
+  await Movie.updateMany(
+    { _id: rental.movie._id },
+    {
+      $inc: { numberInStock: 1 },
+    }
+  );
+
   res.status(200).send(rental); // Return rental for now
 });
