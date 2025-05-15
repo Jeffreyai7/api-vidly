@@ -107,12 +107,15 @@ describe("/api/returns", () => {
     expect(diff).toBeLessThan(10 * 1000);
   });
 
-  it("should set the returnDate if input is valid", async () => {
-    rental.dateOut = moment().add(-7, "days");
+  it("should set the rentalFee if input is valid", async () => {
+    rental.dateOut = moment().add(-7, "days").toDate();
+    await rental.save();
     const res = await exec();
 
     const rentalInDb = await Rental.findById(rental._id);
-    expect(diff).toBe(14);
+    expect(rentalInDb.rentalFee).toBe(14); // 2 * 7 = 14 as we
+
+    expect;
   });
 
   it("should increaase the movie stock", async () => {
@@ -120,6 +123,8 @@ describe("/api/returns", () => {
 
     const movieInDb = await Rental.findById(movieId);
     expect(movieInDb.numberInStock).toBe(movie.numberInStock + 1);
+
+    
   });
 
   it("should return the rental if input is valid", async () => {
