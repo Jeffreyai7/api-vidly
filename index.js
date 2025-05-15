@@ -4,16 +4,21 @@ const app = express();
 import routesBase from "./startup/routes.js";
 import connectDb from "./startup/db.js";
 import logging from "./startup/logging.js";
-import configure from "./startup/config.js";
+// import configure from "./startup/config.js";
 import winston from "winston";
 import prod from "./startup/prod.js";
-// import dotenv from "dotenv";
-// dotenv.config();
+import dotenv from "dotenv";
+
+const env = process.env.NODE_ENV || "development";
+
+dotenv.config({
+  path: `.env.${env}`,
+});
 
 routesBase(app);
 connectDb();
 logging();
-configure();
+// configure();
 prod(app);
 
 app.get("/", (req, res) => {
