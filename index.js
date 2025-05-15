@@ -9,11 +9,9 @@ import winston from "winston";
 import prod from "./startup/prod.js";
 import dotenv from "dotenv";
 
-const env = process.env.NODE_ENV || "development";
+// const env = process.env.NODE_ENV || "development";
 
-dotenv.config({
-  path: `.env.${env}`,
-});
+dotenv.config();
 
 routesBase(app);
 connectDb();
@@ -32,3 +30,5 @@ const server = app.listen(port, () => {
 });
 
 export default server;
+
+// db=mongodb://localhost/vidlyapp

@@ -828,3 +828,9 @@
 {"level":"info","message":"listening on port 5000"}
 {"level":"info","message":"listening on port 5000"}
 {"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb://localhost/vidlyapp..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to mongodb+srv://jirukeh:Abalaba94@rentalservice.sawmq0p.mongodb.net/?retryWrites=true&w=majority&appName=rentalservice..."}
+{"level":"info","message":"listening on port 5000"}
+{"level":"info","message":"Connected to MongoDB..."}
