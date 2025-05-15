@@ -7,6 +7,8 @@ import logging from "./startup/logging.js";
 import configure from "./startup/config.js";
 import winston from "winston";
 import prod from "./startup/prod.js";
+// import dotenv from "dotenv";
+// dotenv.config();
 
 routesBase(app);
 connectDb();

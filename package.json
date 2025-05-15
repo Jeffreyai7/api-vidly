@@ -6,6 +6,9 @@
     "start": "node index.js",
     "test": "cross-env NODE_ENV=test node --experimental-vm-modules ./node_modules/jest/bin/jest.js --watchAll"
   },
+  "engines": {
+    "node": "20.17.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "bcrypt": "^5.1.1",
     "compression": "^1.8.0",
     "config": "^3.3.12",
+    "dotenv": "^16.5.0",
     "express": "^4.21.1",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",

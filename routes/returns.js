@@ -1,7 +1,7 @@
 import express from "express";
 import moment from "moment";
-import { Rental } from "../models/rental";
-import { Movie } from "../models/movie";
+import { Rental } from "../models/rental.js";
+import { Movie } from "../models/movie.js";
 export const returnsRouter = express.Router();
 
 returnsRouter.post("/", async (req, res) => {
